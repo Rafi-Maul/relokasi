@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .goog-te-gadget-simple {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            /* height: 10px; */
+            display: inline-block;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value {
+            color: white;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value:hover {
+            text-decoration: none;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            display: none;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value:after {
+            content: 'Select Language';
+            font-weight: bold;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+    <!-- nav -->
+
+    <nav class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 bg-white  text-white  rounded-none h-24 bg-opacity-80  lg:px-8 lg:py-4">
+        <div class="flex items-center justify-between text-blue-gray-900 ">
+          <a href="#"
+            class="ml-16 block cursor-pointer py-1.5 font-sans  text-xl leading-relaxed text-inherit antialiased">
+            <img src="/img/logo11.png" alt="" style="height: 60px; width: auto;">
+          </a>
+          <div class="flex items-center gap-4">
+            <div class="hidden mr-4 lg:block">
+              <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+                <li class="block p-1 font-sans text-xl antialiased font-bold gap-5 leading-normal text-red-800">
+                  <a href="#about" class="flex items-center">
+                    ABOUT
+                  </a>
+                </li>
+                <li class="block p-1 font-sans text-xl antialiased font-bold gap-5 leading-normal text-red-800">
+                  <a href="#" class="flex items-center">
+                    NEWS
+                  </a>
+                </li>
+                <li class="block p-1 font-sans text-xl antialiased font-bold gap-5 leading-normal text-red-800 mr-10">
+                  <a href="#" class="flex items-center">
+                    STORE
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+              type="button">
+              <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+
+    <section id="dynamic-bg-section" class="relative bg-cover backdrop-blur-lg bg-center bg-no-repeat h-full">
+        <div class="absolute inset-0  ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+            <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+                <div class="max-w-xl text-center mr-40">
+                    <h1 class="text-3xl font-bold sm:text-6xl text-white font-sans">
+                    MOVER SPECIALIST
+                    </h1>
+
+                    <p class="mt-4 font-sans max-w-xl sm:text-xl/relaxed text-white">DOMESTIC SPECIALIST - ASIA FOCUS - GLOBAL NETWORK</p>
+                    
+                    <div class="mt-8 flex flex-wrap gap-4 text-center">
+                </div>
+
+                <!-- Base -->
+                <div class="flex justify-around md:justify-start mt-24">
+                    <a
+                    class="inline-block rounded bg-red-800  px-8 py-3 md:text-sm text-xs pr-20 md:pr-6 font-medium md:w-2/4 w-20 text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-white"
+                    href="#"
+                    >
+                    SERVICES    
+                    </a>
+                    
+                    <!-- Border -->
+                    
+                    <a
+                    class="inline-block rounded bg-red-800 md:ml-24 ml-10  px-8 py-3 md:text-sm text-xs pr-24 pl-6 md:pl-0 md:pr-0 font-medium md:w-2/4 w-20 text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-white"
+                    href="#"
+                    >
+                    TRANSPORT    
+                    </a>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="p-4 lg:p-8 bg-red-800 dark:text-gray-100" id="about">
+        <div class="container mx-auto space-y-12">
+            <div class="md:grid grid-rows-3 md:grid-flow-col md:gap-4 md:overflow-hidden rounded-md shadow-sm lg:flex-row">
+                <img src="/img/mpm.png" alt="" class="md:h-80 h-40 md:w-auto w-full dark:bg-gray-500 my-5 md:my-0 aspect-video col-span-2 rounded-lg">
+                <img src="/img/trucking.jpg" alt="" class="md:h-80 h-40 md:w-auto w-full dark:bg-gray-500 my-5 md:my-0 aspect-video col-span-2 rounded-lg">
+                <img src="/img/moving.jpg" alt="" class="md:h-80 h-40 md:w-auto w-full dark:bg-gray-500  my-5 md:my-0 aspect-video row-span-1 col-span-2 rounded-lg">
+                <div class="flex flex-col justify-center rounded-lg flex-1 p-6 dark:bg-white row-span-3">
+                    <div id="google_translate_element" class="flex justify-end h-1 w-30"></div>
+                    <span class="text-3xl uppercase dark:text-gray-900">ABOUT US</span>
+                    <h3 class="text-3xl font-bold text-gray-800">PT Relokasi</h3>
+                    <p class="my-6 dark:text-gray-700">UD Medan Packing Service was established in 1970 by Mr. K.Shiwa Pergasen in Medan, North
+                        Sumatra. To improve the operational and management system in 2012 UD Medan Packing Service was
+                        renamed to PT. Relokasi. To provide a better relocation experience for customers in 2016 PT.
+                        Medan Packing Relocation was established as a subsidiary company of PT. Relokasi. Certified by
+                        International Association of Movers (IAM), PT. Medan Packing Relocation is committed to provide the best
+                        moving experience and ensuring customer satisfaction. Therefore, we continually strive to analyze the needs
+                        of our customers, improve our services, develop our techniques and expand our network domestically and
+                        internationally.
+                    </p>
+                    <p class="my-6 dark:text-gray-700">
+                        A moving company will handle your move from start to finish. This means that experienced professionals will pack your household items and personal possessions, load them into the moving truck, drive the
+                        vehicle to your final destination, unload your belongings, take them to their rightful places in your new home,
+                        and even reassemble furniture, set up appliances and dispose of the packing materials
+                        So, once you have booked the services of a trustworthy full service moving company, all you need to
+                        do is decide on your moving date and state your specific requirements. The movers will take care of everything
+                        else from all the essential aspects and small details of the moving procedure.
+                    </p>
+                    <p class="my-6 dark:text-gray-700">
+                        Member of: <img src="img/iam.png" alt="">
+                        Since the establishment of PT Relokasi in the Year 1970, it has been
+                        our vision to always provide the best services in handling our customer’s move.
+                        In order to provide better services to our customers, we join the International
+                        Association of Movers (IAM).
+                        We have been officially a member of IAM since March 2018. IAM is an association
+                        representing over +/- 2,000 companies in 170 countries. We are also the only IAM
+                        members on the islands of Sumatra and Aceh. This is a pride for Management and Team PT Medan Packing
+                        Mover for having successfully realized the vision of the company secured by the previous company leader
+                    </p>
+
+                    <button type="button" class="self-start">Action</button>
+                </div>
+            </div>
+            <!-- <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
+                <img src="https://source.unsplash.com/640x480/?2" alt="" class="h-80 dark:bg-gray-500 aspect-video">
+                <div class="flex flex-col justify-center flex-1 p-6 bg-white">
+                    <span class="text-xs uppercase text-gray-800">Join, it's free</span>
+                    <h3 class="text-3xl font-bold text-gray-800">We're not reinventing the wheel</h3>
+                    <p class="my-6 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
+                    <button type="button" class="self-start">Action</button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const section = document.getElementById('dynamic-bg-section');
+        const images = [
+            'img/jogja.jpg',
+            'img/bromo.jpg',
+            'img/candi.jpg',
+            'img/makassar.jpg',
+            'img/ambon.jpg',
+            'img/papua.jpg',
+            'img/kalimantan.jpg',
+            'img/surabaya.jpg',
+            'img/lombok3.jpg',
+            'img/toraja.jpg',
+
+        ];
+        let currentIndex = 0;
+
+        function changeBackground() {
+            section.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Change background every 5 seconds
+        setInterval(changeBackground, 5000);
+
+        // Set initial background
+        changeBackground();
+         });
+
+         function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            // new google.translate.TranslateElement(
+            //     {pageLanguage: 'en'},
+            //     'google_translate_element'
+            // );
+        }
+
+
+    </script>
+    
+</body>
+</html>
